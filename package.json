@@ -1,6 +1,6 @@
 {
   "name": "@masum-xyz/terbilang",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Konversi angka ke terbilang Bahasa Indonesia dengan dukungan style (lower, upper, sentence, title), minus, dan koma/desimal.",
   "main": "index.js",
   "module": "index.js",

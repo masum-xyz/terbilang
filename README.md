@@ -12,7 +12,7 @@ Konversi angka ke terbilang Bahasa Indonesia. Mendukung style output, angka nega
   Contoh: `1057` → "Seribu Lima Puluh Tujuh"
 - Style hasil: `sentence` | `title` | `upper` | `lower`
 - Angka minus: `-42` → "Minus Empat Puluh Dua"
-- Angka desimal: `12.34` → "Dua Belas koma tiga empat"
+- Angka desimal: `1870.57` → "Seribu Delapan Ratus Tujuh Puluh koma lima tujuh"
 - Bisa dipakai di:
   - Node.js (CommonJS `require`)
   - ESM (`import`)
@@ -42,24 +42,24 @@ Setelah itu akan tersedia fungsi global `terbilang()` di window.
 ```js
 const terbilang = require('@masum-xyz/terbilang');
 
-console.log(terbilang(1057));
-// Seribu Lima Puluh Tujuh
+console.log(terbilang(1870.57));
+// Seribu Delapan Ratus Tujuh Puluh koma lima tujuh
 
-console.log(terbilang(-42));
-// Minus Empat Puluh Dua
+console.log(terbilang(1870.57, 'title'));
+// Seribu Delapan Ratus Tujuh Puluh Koma Lima Tujuh
 
-console.log(terbilang(12.34));
-// Dua Belas koma tiga empat
-
-console.log(terbilang(1057, { style: 'title' }));
-// Seribu Lima Puluh Tujuh
+console.log(terbilang(-42, 'upper'));
+// MINUS EMPAT PULUH DUA
 ```
 
 ### ESM (import)
 ```js
 import terbilang from '@masum-xyz/terbilang';
 
-console.log(terbilang(1057, { style: 'sentence' }));
+console.log(terbilang(1057));
+// Seribu Lima Puluh Tujuh
+
+console.log(terbilang(1057, 'sentence'));
 // Seribu lima puluh tujuh
 ```
 
@@ -75,3 +75,4 @@ MIT © 2025 Moh Masum Safrulihsan
 
 ## 🔗 Tautan
 - npm: https://www.npmjs.com/package/@masum-xyz/terbilang
+- Issue/Bug: Silakan buka issue di repository ini.
